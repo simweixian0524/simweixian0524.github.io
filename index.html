@@ -8,7 +8,17 @@
 
 <style>
     body {
-        background-image: linear-gradient(to right, #3885de,#639cde,#7970b5);
+        background-image: linear-gradient(to right, #3885de, #639cde, #7970b5);
+    }
+
+    .i1 {
+        height: 170px;
+        width: 600px;
+        opacity: 0.75;
+    }
+
+    .i1:hover {
+        opacity: 1.0;
     }
 
     .d1 {
@@ -20,11 +30,11 @@
         border-radius: 30px;
         border: 20px;
         color: rgb(113, 38, 212);
-        background-color: rgb(248, 213, 184);
+        background-color: rgb(247, 182, 129);
         margin: 5px;
     }
 
-    .d1:hover {
+    .d1:hover,.d2:hover {
         padding: 1.5% 3%;
         border-style: solid;
         border-radius: 30px;
@@ -42,26 +52,71 @@
         border-radius: 30px;
         border: 20px;
         color: rgb(113, 38, 212);
-        background-color: rgb(248, 213, 184);
+        background-color: rgb(255, 209, 172);
         margin: 5px;
+    }
+
+    .df1 {
+        display: flex;
+        height: 100%;
+    }
+
+    .d3 {
+        height: 100%;
+        flex: 1;
+        width: auto;
+        height: fit-content;
+        padding: 0.75% 2% 0.75% 0%;
+    }
+
+    .d4 {
+        height: 100%;
+        flex: 3;
+        width: auto;
+        height: fit-content;
+        padding: 0.75% 2%;
     }
 </style>
 
 <body>
-    <div style="text-align:center">
-        <img src="photo.jpg" height="250px" width="=250px">
-        <p>Sim Wei Xian</p>
-        <p>weixiansim123@gmail.com</p>
-        <a href="week2/index.html" class="d1">week2</a>
-        <br>
-        <a href="week3/index.html" class="d1">week3</a>
-        <ul>
-            <a href="week3/apple.html" class="d2">apple.html</a>
-            <a href="week3/exercise2/index.html" class="d2">exercise2</a>
-        </ul>
+    <div class="df1">
+        <div class="d3">
+            <img src="photo.jpg" height="700px" style="opacity:0.85">
+        </div>
+
+        <div class="d4">
+            <h1>Name: Sim Wei Xian</h1>
+            <h1>Email: weixiansim123@gmail.com</h1>
+
+            <a href="week2/index.html" class="d1">week2</a>
+            <br>
+
+            <a href="week3/index.html" class="d1">week3</a>
+            <ul>
+                <li>
+                    <a href="week3/apple.html">
+                        <div>
+                            <p class="d2">apple.html</p>
+                            <br>
+                            <img src="applehtml.png " class="i1">
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="week3/exercise2/index.html">
+                        <div>
+                            <p class="d2">exercise2</p>
+                            <br>
+                            <img src="ex2html.png" class="i1">
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
 
     </div>
-
 
 
 
