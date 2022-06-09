@@ -3,3 +3,10 @@
     max-width: 1024px;
     margin:auto;
 }
+
+#header{
+    background-color: #efc5c5;
+    text-align: center;
+    padding: 20px;
+}
+  
