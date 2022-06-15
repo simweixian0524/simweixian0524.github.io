@@ -126,13 +126,17 @@
 }
 
 @media screen and (max-width: 600px) {
-    #feat {
+    #header {
         flex-direction: column;
     }
 
-    #feat a {
+    #phoneNoMenu{
+        width: 100%;
+    }
+    #phoneNo,#menu {
         width: 100%;
         padding: 0px;
+        margin: 0px;
     }
     #context {
         flex-direction: column;
