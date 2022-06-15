@@ -1,0 +1,140 @@
+#container{
+    background-color: #dedbc9;
+    max-width: 1024px;
+    margin: auto;
+    padding: 10px;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    background-color:#569a82;
+    max-width: 1024px;
+}
+
+#logo{
+    margin: 20px 0px 20px 10px;
+    
+}
+
+#phoneNo{
+    margin: 20px 20px 0px 0px;
+    font-size: 30px;
+    border: 5px solid #333;
+    height: fit-content;
+}
+
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #333;
+}
+
+.menu_left,
+.menu_right {
+    padding: 14px 0px;
+}
+
+.menu_left a,
+.menu_right a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    /*width: 172px;*/
+}
+
+.menu_left a:hover,
+.menu_right a:hover {
+    background-color: #ddd;
+    color: black;
+    text-decoration: underline;
+}
+
+#imgSS{
+    background-image: url(../img/bgimg.png);
+    background-size: cover;
+    height: 150px;
+    text-align: center;
+    
+    padding: 20px;
+    
+}
+
+#p1{
+    font-size: 25px;
+    line-height: 150px;
+    margin:auto auto;
+    color: red;
+}
+
+#feat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#feat a {
+    background-color: #333;
+    opacity: 0.9;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 24px 26px;
+    text-decoration: none;
+    width: 25%;
+}
+
+#feat a:hover {
+    opacity: 0.55;
+    color: black;
+    text-decoration: underline;
+}
+
+#context {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#textContext{
+    background-color:rgb(248, 248, 248);
+    width: 75%;
+    text-align: center;
+}
+#slideBar {
+    width: 20%;
+    text-align: center;
+}
+
+#slideBar p{
+    background-color:rgb(245, 49, 49);
+    margin: 0px;
+    padding:5px 3px;
+    font-size: 20px;
+}
+
+#slideBar p:hover {
+    opacity: 0.55;
+    color: white;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .column {
+        width: 50%;
+    }
+}
+
+
+#footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    color: red;
+    height:fit-content;
+}
