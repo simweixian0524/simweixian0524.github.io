@@ -121,12 +121,20 @@
 }
 
 @media screen and (max-width: 600px) {
-    .row {
-        flex-wrap: wrap;
+    #feat {
+        flex-direction: column;
     }
 
-    .column {
-        width: 50%;
+    #feat a {
+        width: 100%;
+        padding: 0px;
+    }
+    #context {
+        flex-direction: column;
+    }
+    
+    #textContext,#slideBar{
+        width: 100%;
     }
 }
 
