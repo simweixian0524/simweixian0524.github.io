@@ -1,11 +1,12 @@
 #logo { grid-area: logo; }
 #menu { grid-area: menu; }
 
-#imgSS { grid-area: imgSS; }
+#phoneNo{grid-area: phoneNo;}
 
-#f1 { grid-area: f1; }
-#f2 { grid-area: f2; }
-#f3 { grid-area: f3; }
+.blank{grid-area: blank;}
+.blank1{grid-area: blank1;}
+
+#imgSS { grid-area: imgSS; }
 
 #SBar { grid-area: SBar; }
 #textC { grid-area: textC; }
@@ -15,11 +16,11 @@
 #container {
   display: grid;
   grid-template-areas:
-    'logo logo menu menu menu menu'
-    'imgSS imgSS imgSS imgSS imgSS imgSS'
-    'f1 f1 f2 f2 f3 f3'
-    'SBar SBar textC textC textC textC'
-    'footer footer footer footer footer footer';
+  'logo logo blank blank blank phoneNo phoneNo phoneNo'
+  'logo logo blank1 menu menu menu menu menu'
+  'imgSS imgSS imgSS imgSS imgSS imgSS imgSS imgSS'
+  'textC textC textC textC textC SBar SBar SBar'
+  'footer footer footer footer footer footer footer footer';
     
   gap: 10px;
   background-color: #2196F3;
