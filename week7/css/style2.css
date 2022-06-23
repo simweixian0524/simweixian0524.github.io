@@ -1,10 +1,10 @@
-#header{
+#header {
     background-color: #04AA6D;
     display: none;
 }
 
 
-.menu{
+.menu {
     background-color: #333;
     overflow: hidden;
     display: flex;
@@ -39,10 +39,11 @@
 }
 
 @media screen and (max-width: 600px) {
-    #header{
+    #header {
         display: flex;
         justify-content: space-between;
     }
+
     .menu {
         flex-direction: column;
         width: 0;
@@ -57,7 +58,14 @@
         text-align: left;
     }
 
-    #header a{
+    #header a {
         display: block;
+    }
+
+    #icon{
+        position: absolute;
+        top: 22px;
+        right: 16px;
+        z-index: 1;
     }
 }

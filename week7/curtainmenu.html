@@ -11,7 +11,7 @@
 
 <body>
 
-    <div class="menu" id="myTopnav">
+    <div class="menu" id="myMenu">
         <a href="#home" class="active">Home</a>
         <a href="#news">News</a>
         <a href="#contact">Contact</a>
@@ -27,12 +27,17 @@
 
     <script>
         function myFunction() {
-            mtn=document.getElementById("myTopnav").style
+            mtn=document.getElementById("myMenu").style
+            icon=document.getElementById("icon").style
             
             if(mtn.width!="100%"){
                 mtn.width = "100%";
+                icon.top="16px";
+                document.getElementById("icon").className="fa-solid fa-xmark"
             }else{
                 mtn.width = "0%";
+                icon.top="22px";
+                document.getElementById("icon").className="fa-solid fa-computer"
             }
 
         }
