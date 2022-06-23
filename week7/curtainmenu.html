@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>week7</title>
     <script src="https://kit.fontawesome.com/08473735bf.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="img/appleLogo.png">
-    <link rel="stylesheet" typr="text/css" href="css/style.css">
+    <link rel="stylesheet" typr="text/css" href="css/style2.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 
-
 <body>
-    <div class="topnav" id="myTopnav">
+
+    <div class="menu" id="myTopnav">
         <a href="#home" class="active">Home</a>
         <a href="#news">News</a>
         <a href="#contact">Contact</a>
         <a href="#about">About</a>
+    </div>
+    <div id="header">
+        <a href="#home" class="active">Home</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i id="icon" class="fa-solid fa-computer"></i>
-            
         </a>
     </div>
+    
 
     <script>
         function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
+            mtn=document.getElementById("myTopnav").style
+            
+            if(mtn.width!="100%"){
+                mtn.width = "100%";
+            }else{
+                mtn.width = "0%";
             }
+
         }
     </script>
+
 </body>
 
 </html>
