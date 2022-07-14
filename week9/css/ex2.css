@@ -1,0 +1,42 @@
+table,th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td{width: 150px;height: 150px;}
+
+tr td:nth-child(1){
+    color:rgba(92,63,143,255);
+    background-color: rgba(208,201,224,255)
+}
+
+tr td:nth-child(2){
+    color:rgba(33,112,144,255);
+    background-color: rgba(188,222,239,255);
+}
+
+tr td:nth-child(3){
+    color:rgba(11,98,133,255);
+    background-color: rgba(177,209,225,255);
+}
+
+tr td:nth-child(4){
+    color:rgba(93,101,36,255);
+    background-color: rgba(212,213,192,255);
+}
+
+tr td:nth-child(5){
+    color:rgba(155,162,65,255);
+    background-color: rgba(227,228,205,255);
+}
+
+tr td:nth-child(6){
+    color:rgba(19,174,167,255);
+    background-color: rgba(204,233,231,255);
+}
+
+tr td:nth-child(7){
+    color:rgba(191,37,63,255);
+    background-color: rgba(241,207,213,255);
+}
