@@ -4,7 +4,7 @@
 <head>
     <title>Spell and Abilities</title>
 
-    <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <link rel="icon" type="image/x-icon" href="img/icon2.png">
     <link rel="stylesheet" typr="text/css" href="css/style.css">
 
     <script src="https://kit.fontawesome.com/08473735bf.js" crossorigin="anonymous"></script>
@@ -26,39 +26,25 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark menuColor">
+    <div class="MenuBar d-flex d-flex justify-content-evenly align-items-center">
+        <img src="img/icon.png" class="logo">
 
-        <img src="img/icon.png" width="20px">
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
-            aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="page1.html">Spell and Abilities</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="page2.html">Game Mode</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="page3.html">Main Story</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="page4.html">Endings</a>
-                </li>
-
-            </ul>
-
+        <div class="menu d-flex justify-content-center align-items-center" id="menu">
+            <a href="SpellAndAbilities.html" class="flex-fill active">Spell and Abilities</a>
+            <a href="GameMode.html" class="flex-fill">Game Mode</a>
+            <a href="MainStory.html" class="flex-fill">Main Story</a>
+            <a href="Ending.html" class="flex-fill">Ending</a>
         </div>
 
-    </nav>
+        <div id="curtainmenuHeader">
+            <a href="#home" class="active">Spell and Abilities</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i id="BarIcon" class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+
+
+    </div>
 
 
 
@@ -69,6 +55,8 @@
         </h3>
         <!--skill-->
         <h4 id="skillText">Skill</h4>
+
+        <hr class="hr1">
 
         <h4 id="skillText2">Spells are activatable after obtaining them either after a boss fight or encounter with a
             certain NPC in the game. From now on we will refer the spell button as CAST because there are different
@@ -233,8 +221,12 @@
 
             </div>
         </div>
+
+
         <!--Abilities-->
         <h4 id="AbilitiesText">Abilities</h4>
+
+        <hr class="hr1">
 
         <h4 id="AbilitiesText2">
             Abilities are skills The Knight can find throughout the game that make traversing the map easier. From now
@@ -495,16 +487,6 @@
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
     <!--------------------------------------------------------------------------------------------->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
@@ -514,6 +496,24 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
         integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
         crossorigin="anonymous"></script>
+
+        <script>
+            function myFunction() {
+            mtn=document.getElementById("menu").style
+            icon=document.getElementById("icon").style
+            
+            if(mtn.width!="100%"){
+                mtn.width = "100%";
+                icon.top="16px";
+                document.getElementById("icon").className="fa-solid fa-xmark"
+            }else{
+                mtn.width = "0%";
+                icon.top="22px";
+                document.getElementById("icon").className="fa-solid fa-bars"
+            }
+
+        }
+        </script>
 </body>
 
 </html>
