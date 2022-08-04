@@ -47,7 +47,7 @@
 
 #container{
     background-color: #2D2C2C;
-    padding: 40px;
+    padding: 80px;
 }
 
 .SpellheaderText{
@@ -111,6 +111,10 @@
     color: #FFFFFF;
 }
 
+.divAbilitiesDetail{
+    width: 80%;
+}
+
 .divAbilitiesDetail h3{
     font-family: Indie Flower;
 }
@@ -150,15 +154,25 @@
     margin: 20px auto;
 }
 /*------------------------------------page4-----------------------------------------------**/
+.ending{
+    width: 100%;
+}
+
 .endingHeaderText{
     font-size: 42px;
-    text-decoration-line: underline;
+    
     color: #FFFFFF;
     font-family: Island Moments;
 }
 
 .Requirement{
     color: #9A9A9A;
+}
+
+.hr2{
+    border: 0;
+    margin: 1px 40% 1px 0px;
+    border-top: 4px solid #FFFFFF;
 }
 
 
