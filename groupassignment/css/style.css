@@ -1,16 +1,21 @@
-#curtainmenuHeader {
-    background-color: #616161;
-    display: none;
+html body {
+    background-color: #3a3a3a;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
-#curtainmenuHeader a {
-    display: none;
-    margin: 40px;
-    width: 60%;
-    border-radius: 20px;
-    background-color: #616161;
-    height: 40px;
+.bg-black {
+    background-color: black;
 }
+
+.bg-grey { /* hex:#5D5D5D */
+    background-color: rgb(93, 93, 93);
+}
+
+.bg-lightgrey { /* hex:#9A9A9A */
+    background-color: rgb(154, 154, 154);
+}
+
 
 .MenuBar{
     background-color: #000000;
@@ -28,7 +33,6 @@
     height: 40px;
 
     overflow: hidden;
-    transition: 0.5s;
 }
 
 .menu .active{
@@ -46,21 +50,21 @@
 /*-----------------------------*/
 
 #container{
-    background-color: #2D2C2C;
+    background-color: #3a3a3a;
     padding: 80px;
 }
 
 .SpellheaderText{
     margin:0px auto 50px auto;
     color: #FFD700;
-    font-family: Hurricane;
+    /*-- font-family: Hurricane;*/
     text-align: center;
     font-size: 42px;
 }
 
 #skillText,#skillText2,#AbilitiesText,#AbilitiesText2{
     color: #FFFFFF;
-    font-family: Gideon Roman;
+    /*-- font-family: Gideon Roman;*/
     text-align: left;
 }
 
@@ -95,6 +99,7 @@
     border-radius: 60px;
 }
 
+
 .color-skill1{
     color:#FFFFFF;
 }
@@ -114,37 +119,40 @@
 .divAbilitiesDetail{
     width: 80%;
 }
-
+/*
 .divAbilitiesDetail h3{
-    font-family: Indie Flower;
+    /*-- font-family: Indie Flower;
 }
+*/
 
 
 /*------------------------------------page2-----------------------------------------------**/
 .gamemode{
-    background-color: #DCD7C9;
+    background-color: #000000;
     width:90%;
     margin: 20px auto;
+    padding: 20px;
 }
 
 .gamemode h3{
-    color:#2C3639;
-    font-family: Vast Shadow;
+    background-color:#000000;
+    color: #FFFFFF;
+    /*-- font-family: Vast Shadow;*/
 }
 
 .gamemode p{
-    color:#3F4E4F;
+    color:#FFFFFF;
 }
 
 /*------------------------------------page3-----------------------------------------------**/
 .mainstoryHeader{
-    font-family: Indie Flower;
+    /*-- font-family: Indie Flower;*/
     color:#C0C0C0;
     margin: 20px auto;
 }
 
 .mainstoryText1,.mainstoryText2{
-    font-family: Hina Mincho;
+    /*-- font-family: Hina Mincho;*/
     color:#E7F6F2;
     margin: 20px auto;
 }
@@ -162,7 +170,7 @@
     font-size: 42px;
     
     color: #FFFFFF;
-    font-family: Island Moments;
+    /*-- font-family: Island Moments; */
 }
 
 .Requirement{
@@ -171,7 +179,7 @@
 
 .hr2{
     border: 0;
-    margin: 1px 40% 1px 0px;
+    margin: 1px 40% 3px 0px;
     border-top: 4px solid #FFFFFF;
 }
 
@@ -181,6 +189,11 @@
 
 
 @media screen and (max-width: 950px) {
+    #container{
+        background-color: #3a3a3a;
+        padding: 30px;
+    }
+
     #divSpells div{
         width:90%;
         margin: 20px 0px;
@@ -207,21 +220,32 @@
         display: block;
     }
 
-    .menu {
-        flex-direction: column;
-        width: 0;
-        height: 100%;
-        overflow-x: hidden;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
     #BarIcon{
         position: absolute;
         top: 22px;
         right: 16px;
         z-index: 1;
+    }
+
+    .hr2{
+        border: 0;
+        margin: 1px 0px 3px 0px;
+        border-top: 4px solid #FFFFFF;
+    }
+
+    .ending{
+        margin-bottom: 60px;
+    }
+
+    .endingHeaderText{
+        font-size: 24px;
+        
+        color: #FFFFFF;
+        /*-- font-family: Island Moments; */
+    }
+
+    .MainStoryIMG{
+        width: 70%;
     }
 
 

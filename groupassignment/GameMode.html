@@ -4,7 +4,7 @@
 <head>
     <title>Game Mode</title>
 
-    <link rel="icon" type="image/x-icon" href="img/icon2.png">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
     <link rel="stylesheet" typr="text/css" href="css/style.css">
 
     <script src="https://kit.fontawesome.com/08473735bf.js" crossorigin="anonymous"></script>
@@ -16,9 +16,11 @@
         crossorigin="anonymous">
 
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Hurricane&family=Indie+Flower&family=Vast+Shadow&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Hurricane&family=Indie+Flower&family=Vast+Shadow&display=swap"
+        rel="stylesheet">
 
 
 </head>
@@ -36,47 +38,99 @@
         </div>
     </div>
 
-    
+
 
 
 
     <div class="container-fuild" id="container">
-        <h4 id="skillText">There are currently 3 game modes in Hollow Knight</h4>
+
         
+
+
+        <h4 id="skillText">There are currently 3 game modes in Hollow Knight</h4>
+
         <hr class="hr1">
 
         <div class="divgamemode">
 
-            <div class="gamemode">
-                <h3>Classic</h3>
 
-                <p>The Standard game mode which the main story of the game unfolds.</p>
-            </div>
+            <!--Gamemode 1-->
+            <div class="gamemode accordion-flush" id="aGamemode1">
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="fHeading1">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#fC1" aria-expanded="false" aria-controls="fC1">
+                            Classic
+                            <i class="fa-solid fa-caret-down ms-5"></i>
+                        </button>
+                    </h3>
 
-            <div class="gamemode">
-
-                <h3>Steel Soul:</h3>
-
-                <p>Unlocked after finishing the game the first time. In Steel Soul Mode The Knight does not respawn upon
-                    death and
-                    if it does happen, the game ends and the save file is reset.
-                </p>
-            </div>
-
-            <div class="gamemode">
-
-                <h3>Godseeker Mode:</h3>
-
-                <p>Unlocked after completing the first three Pantheons in Godhome. The main purpose of this game mode is
-                    to let the
-                    player to gain access to almost all of the boss fight in the game. The player is given the fully
-                    upgraded
-                    Knight, fully upgraded Nail, most of the Charms, upgraded spells and abilities without playing
-                    through the main
-                    game.
-                </p>
+                    <div id="fC1" class="accordion-collapse collapse" aria-labelledby="fHeading1"
+                        data-bs-parent="#aGamemode1">
+                        
+                        <div class="accordion-body">
+                            The Standard game mode which the main story of the game unfolds.
+                        </div>
+                        
+                    </div>
+                </div>
 
             </div>
+
+            <!--Gamemode 2-->
+            <div class="gamemode accordion-flush" id="aGamemode2">
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="fHeading2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#fC2" aria-expanded="false" aria-controls="fC2">
+                            Steel Soul
+                            <i class="fa-solid fa-caret-down ms-5"></i>
+                        </button>
+                    </h3>
+
+                    <div id="fC2" class="accordion-collapse collapse" aria-labelledby="fHeading2"
+                        data-bs-parent="#aGamemode2">
+                        <div class="accordion-body">
+                            Unlocked after finishing the game the first time. In Steel Soul Mode The Knight does not
+                            respawn upon
+                            death and
+                            if it does happen, the game ends and the save file is reset.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Gamemode 3-->
+            <div class="gamemode accordion-flush" id="aGamemode3">
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="fHeading3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#fC3" aria-expanded="false" aria-controls="fC3">
+                            Godseeker Mode
+                            <i class="fa-solid fa-caret-down ms-5"></i>
+                        </button>
+                    </h3>
+
+                    <div id="fC3" class="accordion-collapse collapse" aria-labelledby="fHeading3"
+                        data-bs-parent="#aGamemode3">
+                        <div class="accordion-body">
+                            Unlocked after completing the first three Pantheons in Godhome. The main purpose of this
+                            game mode is
+                            to let the
+                            player to gain access to almost all of the boss fight in the game. The player is given the
+                            fully
+                            upgraded
+                            Knight, fully upgraded Nail, most of the Charms, upgraded spells and abilities without
+                            playing
+                            through the main
+                            game.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
 

@@ -4,7 +4,7 @@
 <head>
     <title>Spell and Abilities</title>
 
-    <link rel="icon" type="image/x-icon" href="img/icon2.png">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
     <link rel="stylesheet" typr="text/css" href="css/style.css">
 
     <script src="https://kit.fontawesome.com/08473735bf.js" crossorigin="anonymous"></script>
@@ -22,6 +22,9 @@
         rel="stylesheet">
 
 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -36,15 +39,19 @@
             <a href="Ending.html" class="flex-fill">Ending</a>
         </div>
 
-        <div id="curtainmenuHeader">
-            <a href="#home" class="active">Spell and Abilities</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i id="BarIcon" class="fa-solid fa-bars"></i>
-            </a>
-        </div>
-
 
     </div>
+
+    
+
+
+
+
+
+
+
+
+
 
 
 
@@ -62,6 +69,12 @@
             certain NPC in the game. From now on we will refer the spell button as CAST because there are different
             controls for different devices.</h4>
 
+            
+
+
+
+
+            
         <div id="divSpells" class="d-flex justify-content-evenly flex-wrap ">
             <!--skill1-->
             <div class="d-flex  p-2 justify-content-center align-items-center">
@@ -191,7 +204,7 @@
             <!--skill6-->
             <div class="d-flex p-2 justify-content-evenly flex-column align-items-center">
 
-                <img src="img/skill/Shade_Soul_Icon.png"  width="60px">
+                <img src="img/skill/Shade_Soul_Icon.png" width="60px">
 
                 <h3 class="color-w text-center">Shade Soul</h3>
 
@@ -206,7 +219,7 @@
             <!--skill7-->
             <div class="d-flex p-2 justify-content-evenly flex-column align-items-center">
 
-                <img src="img/skill/Descending_Dark_Icon.png"  width="60px">
+                <img src="img/skill/Descending_Dark_Icon.png" width="60px">
 
                 <h3 class="color-w text-center">Descending Dark</h3>
 
@@ -234,9 +247,9 @@
 
         <div id="divAbilities" class="d-flex justify-content-center flex-column">
             <!--Abilities 1 -->
-            <div class="d-flex p-2 justify-content-between align-items-center">
+            <div class="d-flex p-2 justify-content-evenly align-items-center">
 
-                <div>
+                <div class="w-25 ms-5">
                     <img src="img/abilities/Mothwing_Cloak_Icon.png">
                     <p class="color-w">Mothwing Cloak</p>
                 </div>
@@ -264,7 +277,7 @@
             <!--Abilities 2 -->
             <div class="d-flex p-2 justify-content-center align-items-center">
 
-                <div>
+                <div class="w-25 ms-5">
                     <img src="img/abilities/Shade_Cloak_Icon.png">
                     <p class="color-w">Shade Cloak</p>
                 </div>
@@ -290,7 +303,7 @@
             <!--Abilities 3 -->
             <div class="d-flex p-2 justify-content-center align-items-center">
 
-                <div>
+                <div class="w-25 ms-5">
                     <img src="img/abilities/Mantis_Claw.png">
                     <p class="color-w">Mantis Claw</p>
                 </div>
@@ -313,7 +326,7 @@
             <!--Abilities 4 -->
             <div class="d-flex p-2 justify-content-center align-items-center">
 
-                <div>
+                <div class="w-25 ms-5">
                     <img src="img/abilities/Crystal_Heart_Icon.png">
                     <p class="color-w">Crystal Heart</p>
                 </div>
@@ -337,7 +350,7 @@
             <!--Abilities 5 -->
             <div class="d-flex p-2 justify-content-center align-items-center">
 
-                <div>
+                <div class="w-25 ms-5">
                     <img src="img/abilities/Monarch_Wings_Icon.png">
                     <p class="color-w">Monarch Wings</p>
                 </div>
@@ -358,9 +371,9 @@
             <!--Abilities 6 -->
             <div class="d-flex p-2 justify-content-center align-items-center">
 
-                <div>
+                <div class="w-25 ms-5">
                     <img src="img/abilities/Isma's_Tear.png">
-                    <p class="color-w">Isma’s Tear</p> 
+                    <p class="color-w">Isma’s Tear</p>
                 </div>
 
                 <div class="divAbilitiesDetail">
@@ -380,7 +393,7 @@
             <!--Abilities 7 -->
             <div class="d-flex p-2 justify-content-center align-items-center">
 
-                <div>
+                <div class="w-25 ms-5">
                     <img src="img/abilities/Dream_Nail.png">
                     <p class="color-w">Dream Nail</p>
                 </div>
@@ -423,7 +436,7 @@
             <!--Abilities 8 -->
             <div class="d-flex p-2 justify-content-center align-items-center">
 
-                <div>
+                <div class="w-25 ms-5">
                     <img src="img/abilities/Awoken_Dream_Nail_Icon.png">
                     <p class="color-w">Awoken Dream Nail</p>
                 </div>
@@ -450,7 +463,7 @@
             <!--Abilities 9 -->
             <div class="d-flex p-2 justify-content-center align-items-center">
 
-                <div>
+                <div class="w-25 ms-5">
                     <img src="img/abilities/Icon_HK_Dreamgate.png">
                     <p class="color-w">Dreamgate</p>
                 </div>
@@ -495,23 +508,7 @@
         integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
         crossorigin="anonymous"></script>
 
-        <script>
-            function myFunction() {
-            mtn=document.getElementById("menu").style
-            icon=document.getElementById("icon").style
-            
-            if(mtn.width!="100%"){
-                mtn.width = "100%";
-                icon.top="16px";
-                document.getElementById("icon").className="fa-solid fa-xmark"
-            }else{
-                mtn.width = "0%";
-                icon.top="22px";
-                document.getElementById("icon").className="fa-solid fa-bars"
-            }
 
-        }
-        </script>
 </body>
 
 </html>
