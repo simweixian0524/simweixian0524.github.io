@@ -14,6 +14,7 @@
 }
 
 #box2 {
+    opacity: 0.75;
     width: 200px;
     font-weight: 900;
     color: red;
