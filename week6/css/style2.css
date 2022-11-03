@@ -1,0 +1,91 @@
+#logo {
+    grid-area: logo;
+}
+
+#menu1 {
+    background-color: white;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: menu1;
+}
+
+#menu1 a {
+    color: rgb(61, 61, 61);
+    padding: 24px 26px;
+    text-align: center;
+    text-decoration: none;
+    width: 25%;
+}
+
+#imgSS {
+    grid-area: imgSS;
+}
+
+#f1 {
+    grid-area: f1;
+}
+
+#f2 {
+    grid-area: f2;
+}
+
+#f3 {
+    grid-area: f3;
+}
+
+#f1,
+#f2,
+#f3 {
+    color: red;
+}
+
+
+#SlideBar {
+    background-color: #333333;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    grid-area: SlideBar;
+}
+
+#SlideBar a {
+    color: white;
+    padding: 24px 26px;
+    text-align: center;
+    text-decoration: none;
+    width: 25%;
+}
+
+#textContent {
+    padding: 24px 26px;
+    grid-area: textContent;
+    background-color: white;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+    grid-area: footer;
+}
+
+#grid-container {
+    margin: auto;
+    max-width: 1280px;
+    display: grid;
+    grid-template-areas:
+        'logo logo menu1 menu1 menu1 menu1'
+        'imgSS imgSS imgSS imgSS imgSS imgSS'
+        'imgSS imgSS imgSS imgSS imgSS imgSS'
+        'f1 f1 f2 f2 f3 f3'
+        'f1 f1 f2 f2 f3 f3'
+        'SlideBar SlideBar textContent textContent textContent textContent'
+        'SlideBar SlideBar textContent textContent textContent textContent'
+        'footer footer footer footer footer footer'
+
+    ;
+    gap: 1px;
+}
