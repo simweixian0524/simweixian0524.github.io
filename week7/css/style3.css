@@ -1,0 +1,32 @@
+#myForm {
+    display: block;
+    margin: auto;
+    background-color: rgba(0, 255, 26, 0.292);
+    color: rgba(3, 89, 12, 0.783);
+
+    width: fit-content;
+}
+
+input {
+    height: 20px;
+}
+
+#country {
+    width: 190px;
+    height: 25px;
+}
+
+
+#formTitle {
+    font-size: 24px;
+}
+
+#submitButton {
+    display: block;
+    width: fit-content;
+    padding: 10px 25px;
+    color: white;
+    background-color: green;
+    border-radius: 25px;
+    margin: auto;
+}

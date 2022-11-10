@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>exercise1</title>
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/08473735bf.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+
+
+<body>
+
+    <div id="logo">
+        <img src="img/appleLogo.png" width="50px">
+    </div>
+
+
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+
+
+
+    <div style="padding-left:16px">
+        <h2>Responsive Topnav Example</h2>
+        <p>Resize the browser window to see how it works.</p>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+                document.getElementById("closebtn").style.display = "block";
+            } else {
+                x.className = "topnav";
+                document.getElementById("closebtn").style.display = "none";
+            }
+        }
+
+        function closeNav() {
+            var x = document.getElementById("myTopnav");
+            x.className = "topnav";
+        }
+    </script>
+
+</body>
+
+</html>
