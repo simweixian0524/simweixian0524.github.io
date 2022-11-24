@@ -1,0 +1,25 @@
+#container {
+    display: flex;
+    background-color: #0f0e0c;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'BhuTuka Expanded One', cursive;
+    padding: 2% 0px;
+}
+
+#title {
+    font-family: 'Source Serif Pro', serif;
+}
+
+.subtitle {
+    font-family: 'Poppins', sans-serif;
+}
+
+.div1 {
+    margin: 10px;
+    width: 264px;
+    text-align: center;
+
+    border-bottom: 2px solid #ffffff;
+}
