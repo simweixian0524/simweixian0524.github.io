@@ -18,9 +18,9 @@
 <body>
 
     <div class="bg1">
-        <div class="header">
+        <div class="header" id="header">
 
-            <div class="logo">
+            <div class="logo" id="logo">
                 <a href="#home"><img src="img/music.png"></a>
             </div>
 
@@ -28,22 +28,26 @@
                 <a href="#news">介绍</a>
                 <a href="#contact">推荐</a>
                 <a href="#about">关于</a>
-                <a href="#about" class="contactMobile">Contact</a>
+                <a href="#about">反馈</a>
                 <a href="javascript:void(0);" id="barMenu" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
+                    <i id="MenuIcon" class="fa fa-bars"></i>
                 </a>
+                <a href="javascript:void(0);" id="closebtn" onclick="closeNav()">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+
             </div>
 
-            <a href="#contact" class="contactButton">Contact</a>
+
 
         </div>
 
         <div class="divDetail">
 
-            <img src="img/malody.png" width="40%">
+            <img src="img/malody.png">
 
             <div class="Detail">
-                <p class="subtitle">音游是什么？</p>
+                <p class="Homesubtitle">音游是什么？</p>
 
                 <p>
                     音游（Music Game）是一种游戏类型。 在游戏中，玩家根据节奏与屏幕显示的内容用键盘、控制器、身体动作等进行回应。
@@ -54,16 +58,21 @@
                 </p>
 
 
-                <a href="#介绍" class="aText">更多</a>
+                <a href="#介绍" class="aText">了解更多</a>
 
             </div>
 
         </div>
+
     </div>
 
     <div class="bg2">
+        <p class="pIntro">
+            音游随着时间发展到现在，现在的音游与被认为是最早的音游的パラッパラッパー相比，不管是玩法上，还是画面呈现上都有了巨大的改变，一般上也有收入各种各样不同风格的歌曲供玩家游玩。下面简单介绍一些常见的移动端音游。
+        </p>
 
         <div class="row">
+
             <div class="bg2Div">
                 <img src="img/DeemoIcon.jpg" class="MobileIcon">
                 <p>
@@ -77,9 +86,7 @@
                     Arcaea是由英国lowiro开发的一款音乐游戏。 特点在于其三维立体的谱面，谱面在一般的下落式音游基础之上还有一条天空判定线。
                 </p>
             </div>
-        </div>
 
-        <div class="row">
             <div class="bg2Div">
                 <img src="img/Lanotalcon.jpg" class="MobileIcon">
                 <p>
@@ -87,36 +94,55 @@
                 </p>
             </div>
 
-            <div class="bg2Div">
-                <img src="img/CytusIcon.png" class="MobileIcon">
-                <p>
-                    是由台湾Rayark开发的一款音乐游戏，特点是由上下移动的扫描线作为判定线，而音符则是会随着节奏出现在屏幕上，玩家需要在扫描线覆盖到音符时点击、长按与拖动音符。
-                </p>
-            </div>
-        </div>
-
-        <div class="footer">
-            <img src="img/music.png" width="200px">
-
-            <div>
-                <p>
-                    <img src="img/pngwing.com.png" width="50px">
-                    010-2386964
-                </p>
-
-                <p>
-                    <img src="img/pngwing.com (1).png" width="50px">
-                    simweixian0524@e.newera.edu.my
-                </p>
-            </div>
+            <div class="MoreButton">了解更多</div>
 
         </div>
 
     </div>
 
+    <div class="footer">
+        <img class="LogoIcon" src="img/music.png">
+
+        <div>
+            <div>
+                <img class="contactIcon" src="img/pngwing.com.png" width="50px">
+                <p>010-2386964</p>
+            </div>
+
+            <div>
+                <img class="contactIcon" src="img/pngwing.com (1).png" width="50px">
+                <p>simweixian0524@e.newera.edu.my</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            document.getElementById("header").style.flexDirection = "column";
+            document.getElementById("logo").style.textAlign = "center";
 
 
 
+
+            x.className += " responsive";
+            document.getElementById("barMenu").style.display = "none";
+            document.getElementById("closebtn").style.display = "block";
+
+        }
+
+        function closeNav() {
+            var x = document.getElementById("myTopnav");
+            document.getElementById("header").style.flexDirection = "row";
+            document.getElementById("logo").style.textAlign = "left";
+
+            x.className = "topnav";
+            document.getElementById("closebtn").style.display = "none";
+            document.getElementById("barMenu").style.display = "block";
+        }
+    </script>
 
 
 
