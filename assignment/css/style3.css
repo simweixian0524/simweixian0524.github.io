@@ -5,6 +5,11 @@ body {
     color: #ffffff;
 }
 
+.bold {
+    font-weight: 800;
+}
+
+
 .bg1 {
     background-color: #404258;
     padding: 1.5% 1%;
