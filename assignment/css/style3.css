@@ -82,6 +82,11 @@ body {
     font-size: 16px;
 }
 
+.footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .LogoIcon {
     width: 200px;
     height: 200px;
@@ -180,8 +185,8 @@ body {
 
 
     .LogoIcon {
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
     }
 
 

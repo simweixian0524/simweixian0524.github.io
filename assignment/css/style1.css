@@ -5,6 +5,12 @@ body {
     color: #ffffff;
 }
 
+body a {
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .bg1 {
     background-color: #404258;
     padding: 1.5% 1%;
@@ -72,6 +78,11 @@ body {
     flex-direction: column;
     align-items: center;
     font-size: 16px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .LogoIcon {
@@ -164,8 +175,8 @@ body {
 
 
     .LogoIcon {
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
     }
 
 
