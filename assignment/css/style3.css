@@ -131,6 +131,10 @@ body {
 
 }
 
+.divText {
+    margin: auto;
+}
+
 .pGameDetail {
     width: 70%;
 }
@@ -207,7 +211,8 @@ body {
     .divGameDetail img,
     .divPackSelectImage img,
     .divGrowthImage img,
-    pGameDetail {
+    .pGameDetail,
+    .divText {
         width: 80%;
     }
 
