@@ -82,17 +82,10 @@ body {
     font-size: 16px;
 }
 
-.footer a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
 .LogoIcon {
     width: 200px;
     height: 200px;
 }
-
-
 
 /*===========================================================================================*/
 /*===========================================================================================*/
@@ -135,10 +128,6 @@ body {
 
 .pGameDetail {
     width: 70%;
-}
-
-.deemoExText {
-    width: 100%;
 }
 
 .divPackSelectImage img {
@@ -191,8 +180,8 @@ body {
 
 
     .LogoIcon {
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
     }
 
 
@@ -213,13 +202,8 @@ body {
     .divGameDetail img,
     .divPackSelectImage img,
     .divGrowthImage img,
-    .pGameDetail,
-    .deemoExText {
-        width: 100%;
-    }
-
-    .deemoExText {
-        width: 100%;
+    pGameDetail {
+        width: 80%;
     }
 
     .divPackSelectImage img,
