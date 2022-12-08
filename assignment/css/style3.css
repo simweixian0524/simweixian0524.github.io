@@ -92,6 +92,8 @@ body {
     height: 200px;
 }
 
+
+
 /*===========================================================================================*/
 /*===========================================================================================*/
 /*===========================================================================================*/
@@ -133,6 +135,10 @@ body {
 
 .pGameDetail {
     width: 70%;
+}
+
+.deemoExText {
+    width: 100%;
 }
 
 .divPackSelectImage img {
@@ -207,8 +213,13 @@ body {
     .divGameDetail img,
     .divPackSelectImage img,
     .divGrowthImage img,
-    pGameDetail {
-        width: 80%;
+    .pGameDetail,
+    .deemoExText {
+        width: 100%;
+    }
+
+    .deemoExText {
+        width: 100%;
     }
 
     .divPackSelectImage img,
