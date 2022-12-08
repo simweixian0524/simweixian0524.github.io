@@ -5,6 +5,11 @@ body {
     color: #ffffff;
 }
 
+.bold {
+    margin: 45px 0px;
+    font-weight: 800;
+}
+
 body a {
     text-align: center;
     color: #ffffff;
@@ -43,6 +48,7 @@ body a {
     color: #C53094;
     font-size: 36px;
     margin: 10px;
+    font-weight: 700;
 }
 
 .topnav {
@@ -89,6 +95,26 @@ body a {
     width: 200px;
     height: 200px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 640px) {
     .subtitle {
