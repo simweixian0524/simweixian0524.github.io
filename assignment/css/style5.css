@@ -10,6 +10,7 @@ body {
     font-weight: 800;
 }
 
+
 .bg1 {
     background-color: #404258;
     padding: 1.5% 1%;
@@ -18,6 +19,7 @@ body {
 .bg2 {
     background-color: #6B728E;
     padding: 1.5% 1%;
+    text-align: center;
 }
 
 .logo img {
@@ -89,27 +91,45 @@ body {
 /*===========================================================================================*/
 /*===========================================================================================*/
 /*===========================================================================================*/
-.divDetail {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.bg_w {
+    background-color: #ffffff;
+    color: #C54D9E;
+    border-radius: 25px;
 }
 
-.divDetail img {
-    width: 60%;
+fieldset {
+    border-radius: 25px;
 }
 
-.Detail {
-    width: 30%;
+#feedbackForm input,
+#feedbackForm textarea {
+    outline-style: none;
+    border: #000000 solid 2px;
+    padding: 14px 16px;
+    width: 95%;
+    height: 30px;
+    margin: 10px;
+}
+
+#feedbackForm .inputw50 {
+    width: 45%;
+}
+
+#submitButton {
+    background-color: #C54D9E;
+    color: white;
     text-align: center;
+    margin: auto;
+    padding: 14px 26px;
+    width: fit-content;
+    border-radius: 25px;
 }
 
-.divIntro {
-    margin: 3% auto;
-    text-align: center;
-    width: 100%;
-}
+
+
+
+
+
 
 @media screen and (max-width: 640px) {
     .subtitle {
@@ -144,15 +164,8 @@ body {
     /*===========================================================================================*/
     /*===========================================================================================*/
 
-    .divDetail {
-        flex-direction: column;
-    }
 
-    .divDetail img,
-    .divIntro,
-    .Detail {
-        width: 80%;
-    }
+
 
 
 }

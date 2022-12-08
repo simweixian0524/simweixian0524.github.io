@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>意见反馈</title>
+    <link rel="stylesheet" type="text/css" href="css/style5.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/08473735bf.js" crossorigin="anonymous"></script>
+
+    <!--Inika字体-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="bg1">
+        <div class="header" id="header">
+
+            <div class="logo" id="logo">
+                <a href="index.html"><img src="img/music.png"></a>
+            </div>
+
+            <div class="topnav" id="myTopnav">
+                <a href="intro.html">介绍</a>
+                <a href="recommend.html">推荐</a>
+                <a href="about.html">关于</a>
+                <a href="feedback.html">反馈</a>
+                <a href="javascript:void(0);" id="barMenu" onclick="myFunction()">
+                    <i id="MenuIcon" class="fa fa-bars"></i>
+                </a>
+                <a href="javascript:void(0);" id="closebtn" onclick="closeNav()">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+
+            </div>
+        </div>
+
+
+        <div class="bg_w">
+            <form name="feedbackForm" id="feedbackForm">
+                <fieldset>
+
+                    名字
+                    <br>
+
+                    <input type="text" name="firstname" class="inputw50" placeholder="姓" required>
+                    <input type="text" name="lastname" class="inputw50" placeholder="名" required>
+                    <br>
+
+                    电子邮件<br>
+
+                    <input type="text" name="email" placeholder="xxx@gmail.com" required>
+                    <br>
+
+                    电话号码<br>
+
+                    <input type="text" name="phone" placeholder="###-#######">
+                    <br>
+
+
+
+                    地址<br>
+                    <input type="text" name="Address" placeholder="地址"><br>
+                    <input type="text" name="Address" placeholder="地址 2"><br>
+
+
+                    反馈<br>
+                    <textarea type="text" name="Address" placeholder=""></textarea>
+
+
+
+                    <br><br>
+                    <div id="submitButton">
+                        提交
+                    </div>
+
+
+
+
+                </fieldset>
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <!----------------------------------------------------------------------------------------------->
+    <!---------------------------------------footer and script--------------------------------------->
+    <!----------------------------------------------------------------------------------------------->
+
+    <div class="footer">
+        <img class="LogoIcon" src="img/music.png">
+
+        <div>
+            <div>
+                <img class="contactIcon" src="img/pngwing.com.png" width="50px">
+                <p>010-2386964</p>
+            </div>
+
+            <div>
+                <img class="contactIcon" src="img/pngwing.com (1).png" width="50px">
+                <p>simweixian0524@e.newera.edu.my</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            document.getElementById("header").style.flexDirection = "column";
+            document.getElementById("logo").style.textAlign = "center";
+
+
+
+
+            x.className += " responsive";
+            document.getElementById("barMenu").style.display = "none";
+            document.getElementById("closebtn").style.display = "block";
+
+        }
+
+        function closeNav() {
+            var x = document.getElementById("myTopnav");
+            document.getElementById("header").style.flexDirection = "row";
+            document.getElementById("logo").style.textAlign = "left";
+
+            x.className = "topnav";
+            document.getElementById("closebtn").style.display = "none";
+            document.getElementById("barMenu").style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>

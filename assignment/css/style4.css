@@ -10,14 +10,17 @@ body {
     font-weight: 800;
 }
 
+
 .bg1 {
     background-color: #404258;
     padding: 1.5% 1%;
+    text-align: center;
 }
 
 .bg2 {
     background-color: #6B728E;
     padding: 1.5% 1%;
+    text-align: center;
 }
 
 .logo img {
@@ -89,27 +92,17 @@ body {
 /*===========================================================================================*/
 /*===========================================================================================*/
 /*===========================================================================================*/
-.divDetail {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.divDetail img {
-    width: 60%;
-}
-
-.Detail {
-    width: 30%;
+.divAbout {
     text-align: center;
+    width: 80%;
+    margin: auto;
 }
 
-.divIntro {
-    margin: 3% auto;
-    text-align: center;
-    width: 100%;
-}
+
+
+
+
 
 @media screen and (max-width: 640px) {
     .subtitle {
@@ -144,15 +137,8 @@ body {
     /*===========================================================================================*/
     /*===========================================================================================*/
 
-    .divDetail {
-        flex-direction: column;
-    }
 
-    .divDetail img,
-    .divIntro,
-    .Detail {
-        width: 80%;
-    }
+
 
 
 }
