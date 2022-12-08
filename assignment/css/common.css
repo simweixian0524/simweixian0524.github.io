@@ -5,11 +5,11 @@ body {
     color: #ffffff;
 }
 
-.bold {
-    margin: 45px 0px;
-    font-weight: 800;
+body a {
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
 }
-
 
 .bg1 {
     background-color: #404258;
@@ -19,7 +19,6 @@ body {
 .bg2 {
     background-color: #6B728E;
     padding: 1.5% 1%;
-    text-align: center;
 }
 
 .logo img {
@@ -44,7 +43,6 @@ body {
     color: #C53094;
     font-size: 36px;
     margin: 10px;
-    font-weight: 700;
 }
 
 .topnav {
@@ -92,52 +90,6 @@ body {
     height: 200px;
 }
 
-/*===========================================================================================*/
-/*===========================================================================================*/
-/*===========================================================================================*/
-/*===========================================================================================*/
-/*===========================================================================================*/
-.bg_w {
-    background-color: #ffffff;
-    color: #C54D9E;
-    border-radius: 25px;
-}
-
-fieldset {
-    border-radius: 25px;
-}
-
-#feedbackForm input,
-#feedbackForm textarea {
-    outline-style: none;
-    border: #000000 solid 2px;
-    padding: 14px 16px;
-    width: 95%;
-    height: 30px;
-    margin: 10px;
-    font-size: 36px;
-}
-
-#feedbackForm .inputw50 {
-    width: 45%;
-}
-
-#submitButton {
-    background-color: #C54D9E;
-    color: white;
-    text-align: center;
-    margin: auto;
-    padding: 14px 26px;
-    width: fit-content;
-    border-radius: 25px;
-}
-
-
-
-
-
-
-
 @media screen and (max-width: 640px) {
     .subtitle {
         font-size: 24px;
@@ -156,32 +108,10 @@ fieldset {
         display: block;
     }
 
-
-
     .LogoIcon {
         width: 100px;
         height: 100px;
     }
-
-
-
-    /*===========================================================================================*/
-    /*===========================================================================================*/
-    /*===========================================================================================*/
-    /*===========================================================================================*/
-    /*===========================================================================================*/
-
-    #feedbackForm input,
-    #feedbackForm textarea {
-        width: 85%;
-    }
-
-    #feedbackForm .inputw50 {
-        width: 30.7%;
-    }
-
-
-
 }
 
 @media screen and (max-width: 600px) {
