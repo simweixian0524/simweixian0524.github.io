@@ -5,6 +5,12 @@ body {
     color: #ffffff;
 }
 
+body a {
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .bg1 {
     background-color: #404258;
     padding: 1.5% 1%;
