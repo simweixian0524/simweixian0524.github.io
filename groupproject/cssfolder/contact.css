@@ -57,12 +57,18 @@
 }
 
 .bg_form input,
-.bg_form textarea {
+.bg_form textarea,
+.bg_form select {
     background-color: rgba(255, 255, 255, 0.35);
     color: white;
     height: 100px;
     width: 80%;
     margin-bottom: 5%;
+}
+
+.bg_form option {
+    background-color: rgba(172, 0, 0, 0.35);
+    color: white;
 }
 
 .bg_form textarea {
