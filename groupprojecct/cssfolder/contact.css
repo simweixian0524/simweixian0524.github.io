@@ -1,0 +1,113 @@
+.marvelbg {
+    width: 50%;
+    height: 1100px;
+    background: linear-gradient(rgb(255 255 255 / 0.7), rgba(255, 255, 255, 0.7)), url(../img/contact_marvelIMG.png) no-repeat 0% 20%/ cover;
+
+
+
+    font-size: 35px;
+    font-family: 'Roboto Condensed';
+
+    text-align: center;
+    color: white;
+    text-decoration: none;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.marvelbg a {
+    color: #001C80;
+    opacity: 1;
+}
+
+.contactIcon {
+    width: 50px;
+}
+
+.title {
+    font-size: 50px;
+    font-family: 'Oswald';
+    margin: 7%;
+}
+
+.bg_form {
+    width: 50%;
+
+    font-size: 35px;
+    font-family: 'Roboto Condensed';
+
+    text-align: center;
+    color: white;
+    background-color: #AC0000;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+::placeholder {
+    color: #ffffff;
+}
+
+.bg_form input,
+.bg_form textarea {
+    background-color: rgba(255, 255, 255, 0.35);
+    color: white;
+    height: 100px;
+    width: 80%;
+    margin-bottom: 5%;
+}
+
+.bg_form textarea {
+    height: 300px;
+}
+
+#divName input {
+    width: 49%;
+}
+
+#divName {
+    width: 80%;
+    margin: auto;
+}
+
+#submitButton {
+    display: flex;
+    background: #FF0000;
+    color: white;
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:500px) {
+
+    .marvelbg,
+    .bg_form {
+        font-size: 18px;
+        width: 100%;
+        height: fit-content;
+    }
+
+    #divContent {
+        flex-direction: column;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    #submitButton {
+        width: 93px;
+        height: 40px;
+    }
+}
